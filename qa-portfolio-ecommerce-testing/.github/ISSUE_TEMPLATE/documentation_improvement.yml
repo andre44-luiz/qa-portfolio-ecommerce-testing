@@ -1,0 +1,29 @@
+name: Melhoria de documentação
+description: Melhorar clareza, navegação ou consistência dos artefatos
+title: "[DOCS] "
+body:
+  - type: input
+    id: file
+    attributes:
+      label: Arquivo ou seção
+      placeholder: README.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema observado
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Melhoria proposta
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceitação
+    validations:
+      required: true

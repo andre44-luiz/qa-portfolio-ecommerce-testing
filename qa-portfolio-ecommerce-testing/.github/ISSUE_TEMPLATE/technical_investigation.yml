@@ -1,0 +1,48 @@
+name: Investigação técnica
+description: Registrar uma dúvida ou suspeita ainda não confirmada como bug
+title: "[INVESTIGAÇÃO] "
+body:
+  - type: textarea
+    id: observation
+    attributes:
+      label: Observação inicial
+      description: Descreva fatos, sem concluir que é bug.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Pergunta de investigação
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Itens relacionados
+      placeholder: Caso, cenário, request, requisito...
+  - type: textarea
+    id: experiments
+    attributes:
+      label: Experimentos planejados
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências disponíveis
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Resultado da triagem
+      options:
+        - Ainda não investigado
+        - Comportamento esperado
+        - Limitação do ambiente
+        - Melhoria
+        - Bug confirmado
+        - Não reproduzido
+    validations:
+      required: true

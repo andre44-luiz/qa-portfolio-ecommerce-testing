@@ -1,0 +1,42 @@
+name: Tarefa de teste
+description: Planejar uma execução, revisão ou preparação
+title: "[TEST] "
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo
+    validations:
+      required: true
+  - type: input
+    id: related_items
+    attributes:
+      label: Casos, cenários ou requisitos relacionados
+      placeholder: TC-WEB-001, SC-WEB-001
+  - type: textarea
+    id: activities
+    attributes:
+      label: Atividades
+      placeholder: |
+        - [ ] Preparar dados
+        - [ ] Executar
+        - [ ] Salvar evidência
+        - [ ] Atualizar matriz
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Critérios de conclusão
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade
+      options:
+        - Alta
+        - Média
+        - Baixa
+    validations:
+      required: true

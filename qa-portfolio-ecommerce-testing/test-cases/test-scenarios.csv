@@ -1,0 +1,21 @@
+﻿ID;Grupo;Funcionalidade;Objetivo;Tipo de teste;Prioridade;Resultado esperado em alto nível;Requisito
+SC-WEB-001;Fluxo principal;Autenticação;Verificar login com credenciais válidas;Funcional positivo;Alta;O usuário autenticado acessa a área de produtos sem mensagem de erro.;REQ-WEB-LOGIN-001
+SC-WEB-002;Fluxo principal;Catálogo;Verificar exibição do catálogo após autenticação;Funcional positivo;Alta;A lista de produtos é apresentada com informações e controles utilizáveis.;REQ-WEB-CATALOG-001
+SC-WEB-003;Fluxo principal;Carrinho;Adicionar um produto ao carrinho;Funcional positivo;Alta;O produto selecionado é refletido no carrinho.;REQ-WEB-CART-001
+SC-WEB-004;Fluxo principal;Checkout;Concluir o checkout demonstrativo com dados aceitos;Funcional positivo;Alta;O fluxo avança até a confirmação demonstrativa.;REQ-WEB-CHECKOUT-002
+SC-WEB-005;Validação de campos;Login;Tentar login sem informar usuário;Funcional negativo;Alta;O acesso não ocorre e o campo obrigatório recebe feedback observável.;REQ-WEB-LOGIN-002
+SC-WEB-006;Validação de campos;Login;Tentar login sem informar senha;Funcional negativo;Alta;O acesso não ocorre e o campo obrigatório recebe feedback observável.;REQ-WEB-LOGIN-003
+SC-WEB-007;Validação de campos;Checkout;Avançar no checkout com campo obrigatório ausente;Funcional negativo;Alta;O avanço é impedido e há feedback sobre o dado ausente.;REQ-WEB-CHECKOUT-001
+SC-WEB-008;Entradas inválidas;Login;Tentar login com credenciais não reconhecidas;Funcional negativo;Alta;O acesso é recusado sem expor área autenticada.;REQ-WEB-LOGIN-004
+SC-WEB-009;Regra de negócio;Carrinho;Verificar correspondência entre itens e indicador do carrinho;Funcional;Alta;A quantidade indicada corresponde aos itens adicionados.;REQ-WEB-CART-003
+SC-WEB-010;Regra de negócio;Catálogo;Ordenar produtos usando opções disponíveis;Funcional;Média;A ordem exibida corresponde à opção selecionada.;REQ-WEB-CATALOG-002
+SC-WEB-011;Mensagens de erro;Login;Avaliar clareza do feedback de autenticação inválida;Usabilidade básica;Média;A mensagem é visível, compreensível e relacionada à ação.;REQ-WEB-LOGIN-004
+SC-WEB-012;Persistência de dados;Carrinho;Navegar entre catálogo e carrinho após adicionar item;Funcional;Alta;O item permanece durante a navegação na mesma sessão.;REQ-WEB-CART-004
+SC-WEB-013;Segurança básica;Sessão;Tentar acessar área interna sem autenticação prévia;Acesso básico negativo;Alta;A área protegida não fica utilizável sem sessão válida.;REQ-WEB-SEC-001
+SC-WEB-014;Responsividade;Interface;Avaliar fluxo principal em viewport 375 × 812;Responsividade básica;Média;Conteúdo essencial permanece legível e operável sem sobreposição crítica.;REQ-WEB-RESP-001
+SC-WEB-015;Acessibilidade básica;Interface;Navegar pelo login e ações principais usando teclado;Acessibilidade básica;Média;Elementos interativos recebem foco e podem ser acionados por teclado.;REQ-WEB-A11Y-001
+SC-API-001;API;Produtos;Listar produtos com paginação mínima;API positivo e limite;Alta;A API responde com coleção, metadados de paginação e no máximo um item para limit=1.;REQ-API-PROD-001
+SC-API-002;API;Produto;Consultar produto por ID válido e formato inválido;API positivo/negativo;Alta;"ID válido retorna produto coerente; formato inválido não retorna um produto válido como sucesso normal.";REQ-API-PROD-002
+SC-API-003;API;Pesquisa;Pesquisar produtos por termo;API funcional;Média;A resposta contém coleção e metadados compatíveis com a pesquisa.;REQ-API-PROD-003
+SC-API-004;API;Autenticação;Autenticar usuário fictício válido e rejeitar credenciais inválidas;API positivo/negativo;Alta;"Credenciais válidas retornam tokens; inválidas não retornam token de acesso.";REQ-API-AUTH-001
+SC-API-005;API;Carrinho;Consultar carrinho por ID;API funcional;Alta;A resposta contém ID, produtos, quantidades e totais com tipos coerentes.;REQ-API-CART-001

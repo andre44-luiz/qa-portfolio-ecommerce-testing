@@ -1,0 +1,101 @@
+name: Bug confirmado
+description: Registrar um defeito reproduzido e investigado
+title: "[BUG] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use este formulário somente após reproduzir e investigar. Dúvidas devem usar Investigação técnica.
+  - type: input
+    id: related_case
+    attributes:
+      label: Caso de teste relacionado
+      placeholder: TC-WEB-001
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Resumo
+      description: Explique o impacto e o comportamento.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ambiente
+      placeholder: Windows 11, Chrome 150, 1366x768, URL...
+    validations:
+      required: true
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: Pré-condições
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reprodução
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado atual
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severidade
+      options:
+        - Crítica
+        - Alta
+        - Média
+        - Baixa
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade sugerida
+      options:
+        - Alta
+        - Média
+        - Baixa
+    validations:
+      required: true
+  - type: input
+    id: frequency
+    attributes:
+      label: Frequência
+      placeholder: 3 de 3 tentativas
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências
+      description: Arraste arquivos ou informe os caminhos.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Confirmação
+      options:
+        - label: Reproduzi ou justifiquei a intermitência
+          required: true
+        - label: Revisei dados e pré-condições
+          required: true
+        - label: Removi dados sensíveis
+          required: true

@@ -1,0 +1,23 @@
+# Segredos e configurações locais
+.env
+.env.*
+!.env.example
+*local*.json
+*.secret.json
+
+# Dependências e arquivos temporários
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Resultados grandes ou temporários
+*.har
+*.log
+api-testing/execution-results/raw/
+evidence/videos/raw/
+
+# Tokens nunca devem ser versionados
+*token*
+!docs/**/*
