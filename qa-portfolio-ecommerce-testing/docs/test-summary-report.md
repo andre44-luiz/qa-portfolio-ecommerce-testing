@@ -20,13 +20,13 @@ Executar os casos prioritários de login, carrinho, acesso sem sessão e API, co
 | Métrica | Quantidade |
 |---|---:|
 | Casos planejados para o ciclo | 8 |
-| Não executados | 8 |
-| Aprovados | 0 |
+| Não executados | 1 |
+| Aprovados | 7 |
 | Reprovados | 0 |
 | Bloqueados | 0 |
 | Não aplicáveis | 0 |
 | Bugs confirmados | 0 |
-| Suspeitas em investigação | 0 |
+| Suspeitas em investigação | 1 |
 
 ## Resultados por área
 

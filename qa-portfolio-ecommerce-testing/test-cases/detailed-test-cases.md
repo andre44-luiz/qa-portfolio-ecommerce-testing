@@ -123,7 +123,6 @@ aplicação. A ocorrência será tratada como observação de ambiente.
   8. Registrar a URL final apresentada pelo navegador.
   9. Registrar qualquer mensagem exibida pela aplicação.
   10. Verificar se algum conteúdo da área autenticada permanece acessível.
-  11. Salvar uma captura de tela com o resultado observado.
 - **Resultado esperado:** a área autenticada não permanece utilizável sem uma sessão válida.
 - **Resultado obtido:**  Ao tentar acessar diretamente a página `/inventory.html` em uma janela anônima, sem sessão autenticada, a aplicação redirecionou o usuário para a tela de login e exibiu a mensagem "Epic sadface: You can only access '/inventory.html' when you are logged in"..
 - **Status:** Aprovado.
