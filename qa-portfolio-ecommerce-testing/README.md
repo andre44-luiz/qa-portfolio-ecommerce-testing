@@ -172,8 +172,8 @@ Esta seção será atualizada depois da primeira execução.
 |---|---:|
 | Cenários planejados | 20 |
 | Casos detalhados | 8 |
-| Casos executados | 0 |
-| Casos aprovados | 0 |
+| Casos executados | 8 |
+| Casos aprovados | 8 |
 | Casos reprovados | 0 |
 | Casos bloqueados | 0 |
 | Bugs confirmados | 0 |
